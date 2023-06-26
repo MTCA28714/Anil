@@ -1,14 +1,18 @@
 <html>
 <head>
-<script type="text/javascript">
-function show_alert()
-{
-alert("I am an alert box!");
+<script>
+function demo1(){
+document.getElementById("p2").style.color="blue";
+document.getElementById("p2").style.fontFamily="Arial";
+document.getElementById("p2").style.fontSize="larger";
 }
 </script>
 </head>
 <body>
-<input type="button"onclick="show_alert()"value="Show
- alert box"/>
+<h2>JavaScript HTML DOM</h2>
+<P>Changing the HTML style:</p>
+<p id="p1">Hello World!</p>
+<p id="p2">Hello World!</p>
+<input type="submit" text="click me"onclick="demo1()"/>
 </body>
 </html>

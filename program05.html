@@ -1,18 +1,24 @@
+<!DOCTYPE html>
 <html>
-
 <body>
-<script type="text/javascript">
-/*
-If the time is less than 9, you will get a "Good morning"greeting.Otherwise you will get a"Good day" greeting.
-*/
-var d=new Date();
-var time=d.getHours();
-if(time<9)
-{
-document.write("Good morning!"); }
-else
-{ document.write("Good day!"); } 
+<h2>JavaScript Validation</h2>
+<p>please input a number between 1 and 10:</p>
+<input id="numb">
+<button type="button"
+onclick="myFunction()">
+Submit</button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+let x=document.getElementById("numb").value;
+let text;
+if(isNaN(x)||x<1||x>10){
+text="Input not valid";
+}else{
+text="Input ok";
+}
+document.getElementById("demo").innerHTML=text;
+}
 </script>
-
 </body>
 </html>

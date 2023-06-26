@@ -1,13 +1,28 @@
 <html>
-
-<body>
-<script type="text/javascript">
+<head>
+<script>
+function validateform()
 {
-document.write("<h1>This is a heading.</h1>");
-document.write("<p>This is a paragraph.</p>");
-document.write("<p>This is another paragraph.</p>");
+var name=document.myForm.txtName.value;
+var password=document.myForm.txtPassword.value;
+if(name==null||name==""){
+alert("Name can't be blank")
+return false;
+}
+else if(password.length<6){
+alert("Password must be at least 6 characters long.");
+return false;
+}
 }
 </script>
-
+</head>
+<body>
+<form name="myForm" method="post">
+Name:<input type="text" name="txtName"><br/>
+Password:<input type="password"
+name="txtPassword"><br/>
+<input type="submit"value="register"
+onclick=validateform()>
+</form>
 </body>
 </html>
