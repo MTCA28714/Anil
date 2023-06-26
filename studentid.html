@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+   <!--Title-->
+        <title>CRUD-JS</title>
+          <!--CSS File-->
+     <link rel="styleesheet" href="css/style.css">
+</head>
+<body>
+     <CENTER><h2>Student Records</h2></CENTER>
+        <!--Table-->
+         <table>
+           <!--ROW-1-->
+<tr> 
+       <!--columm-1-->
+        <td>
+           <!--Form-->
+                <form
+onsubmit="event.preventdefault();onFormSubmit();"
+autocomplete="off">
+                    <h3>Student Form</h3>
+                        <!--div-1-->
+                                 <label>Full Name</label>
+                                     <!--validation Error-->
+                                 <label class="validation-error hide" id="userNamevaliudationError">This field is required</label>
+                     <!--Input User Name-->
+                         <input type="text"name="userName" id="userName" placeholder="Enter the user Name">
+                                            </div>
+                                                <!--div-2-->
+                                                 <div>
+                                               <label>Rollno</label>
+                                               <!--validation Error-->
+                                      <label class="validation-error hide" id="rollNovalidationError">This field is required</label>
+                                                <!--Input Roll No-->
+                                                 <input type="text"name="rollNo" id="rollNo" placeholder="Enter the Roll number">
+                                           </div>
+                                              <!--div-3-->
+                                                 <div>
+                                     <label>Student Class</label>
+                                               <!--validation Error-->
+                                <label class="validation-error hide" id="stdClassvalidationError">This field is required</label>
+                                         <!Input student class-->
+                                       <input type="text"name="stdClass" id="stdClass" placeholder="Enter the Student Class">
+</div>
+<!--div-4-->
+<div>
+    <label>Total Subjects</lable>
+                                 <!--validation Erroir-->
+    <label class="validation-error hide" id="tsubvalidationError">This field is required</label>
+                          <!--Input Total Subjects-->
+                 <input type="numbver"name="tsub" id="tsub" placeholder="Enter the Total Subject">
+</div>
+              <!--div-5-->
+            <div>
+             <label>Age</label>
+           <!--validation Error-->
+<label class="validation-error hide" id="agevalidaionError">This field is required</label>
+                        <!--Input Age-->
+                   <input type="number"name="age" id="age" placeholder="Enter the Age">
+         </div>
+<!--div-6-->
+<div class="form-action-buttons">
+                        <!--Input button-->
+                              <input type="submit"value="submit">
+                      <div>
+</form>
+</td>
+          <!--Column-2-->
+         <td>
+           <!--Nested Table-->
+           <table class="list" id="stdlist" style="background-color:#C2976D;">
+                 <!--Row-2-->
+                 <tr>
+                      <th>Full Name</th>
+                      <th>Rool no</th>
+                      <th>Class</th>
+                     <th>Total subject</th>
+                     <th>Age</th>
+                     <th>Action</th>
+</tr>
+</thead>
+<!--Table Body-->
+<tbody>
+</tbody>
+</table>
+</td>
+</tr>
+</table>
+<!--JS File-->
+         <script src="JS/script.js"></script>
+</body>
+</html>
