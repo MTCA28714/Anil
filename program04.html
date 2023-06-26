@@ -1,38 +1,16 @@
 <html>
-<head>
-<style>
-ul{
-list-style-type:none;
-margin:0;
-padding:0;
-overflow:hidden;
-background-color:gray;
-}
-li{
-float:left;
-}
-li a{
-display:block;
-color:black;
-text-align:center;
-padding:14px 16px;
-text-decoration:none;
-}
-li a:hover:not(.active){
-background-color:green;
-}
-.active{
-background-color:red;
-}
-</style>
-</head>
+
 <body>
-<ul>
-<li><a href="home.html">Home</a></li>
-<li><a href="#aboutus">ABOUTUS</a></li>
-<li><a href="#gallery">GALLERY</a></li>
-<li><a href="#blog">BLOG</a></li>
-<li><a href="#contact.html">CONTACT</a></li>
-</ul>
+<script type="text/javascript">
+//Write a "Good morning"greeting if//the time is less than 10 
+var d=new Date();
+document.write(d+"<br>");
+var time=d.getHours();
+if(time<10)
+{
+document.write("<b>Good morning</b>");
+}
+</script>
+
 </body>
 </html>
