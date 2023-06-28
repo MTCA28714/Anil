@@ -110,55 +110,25 @@ color:inherit;
 <a href="js.html">JavaScript-3</a>
 </div>
  </div>
-<body bgcolor="orange">
-<from>
-<h1>Training survey from</h1></br>
-Name:<input type="text"name="user"value="Enter your name"/>
-<br><p></p>
-Email:<input type="text"name="Email"value="Enter your Email"/>
-<br><p></p>
-Age:<input type="text"name="Age"value="Enter your Age"/>
-<br><p></p>
-<p>Which option best describes you?</p>
-<select name="Dropedown">
-<option value="student"Selected>
-Student</option>
-<option value="Intem"Selected>
-Intem</opction>
-<option value="Professional"Selected>
-Professional</option>
-<option value="Other"Selected>
-Other</option>
-</select>
-<h2>Would you recommend Praveen sir to a friend?</h2>
-<input type="radio"name="subject"values="Yes">Yes
-<input type="radio"name="subject"values="No">No
-<input type="radio"name="subject"values="Maybe">Maybe
-<h4>Language and Frameworks Known(check all the apply)</h4></br>
-<input type="checkbox"name="c"value="on">
-c
-<input type="checkbox"name="c+"value="on">
-c+
-<input type="checkbox"name="c#"value="on">
-c#
-<input type="checkbox"name="java"value="on">
-java
-<input type="checkbox"name="Python"value="on">
-Python
-<input type="checkbox"name="javascript"value="on">
-javascript
-<input type="checkbox"name="React"value="on">
-React
-<input type="checkbox"name="Angular"value="on">
-Angular
-<input type="checkbox"name="Django"value="on">
-Django
-<input type="checkbox"name="spring"value="on">
-spring<br>
-Any comments or suggestions<textarea rows="5"cols="20"names="suggestions">
-Enter your Suggestions
-</textarea><br>
-<input type="submit"name="submit"value="submit"/>
-</from>
-</body>
-</html>
+<div class="login">
+<a href="login.html">Login</a>
+</div>
+</div>
+<script>
+function div()
+{
+var num1,num2,sum;
+num1=parseInt(document.getElementById
+                  ("txtFirstNumber").value);
+num2=parseInt(document.getElementById
+                  ("txtSecondNumber").value);
+div=num1/num2;
+    document.getElementById("txtAnswer").value=div;
+}
+</script> </head>
+<body>
+<p>First Number:<input id="txtFirstNumber"></p>
+<p>Second Number:<input id="txtSecondNumber"></p>
+<button onclick="div()">div Them</button>
+<p>div=<input id="txtAnswer"></p>
+</body></html>
